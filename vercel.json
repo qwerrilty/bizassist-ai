@@ -1,3 +1,11 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "functions": {
+    "api/generate.cjs": {
+      "runtime": "nodejs20.x"
+    }
+  },
+  "rewrites": [
+    { "source": "/api/generate", "destination": "/api/generate.cjs" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }
