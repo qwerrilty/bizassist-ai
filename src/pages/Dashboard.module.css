@@ -1,0 +1,94 @@
+.page {}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 14px;
+  margin-bottom: 30px;
+}
+
+.statCard {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 18px;
+}
+
+.statLabel {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--color-subtle);
+  margin-bottom: 6px;
+}
+
+.statValue {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--color-accent);
+  letter-spacing: -0.5px;
+}
+
+.statUnit {
+  font-size: 11px;
+  color: var(--color-subtle);
+  margin-top: 3px;
+}
+
+.sectionTitle {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.toolsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.toolTile {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toolTile:hover {
+  border-color: var(--color-accent);
+  background: var(--color-accent-bg);
+}
+
+.tileName {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.tileArrow {
+  color: var(--color-subtle);
+  font-size: 14px;
+}
+
+.tip {
+  padding: 16px 18px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius);
+  font-size: 13px;
+  color: var(--color-text-dim);
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.tip strong {
+  color: var(--color-accent);
+}

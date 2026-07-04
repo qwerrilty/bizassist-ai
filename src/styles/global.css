@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --color-bg:        #0F172A;
+  --color-surface:   #1E293B;
+  --color-border:    #334155;
+  --color-muted:     #475569;
+  --color-subtle:    #64748B;
+  --color-text:      #F1F5F9;
+  --color-text-dim:  #94A3B8;
+  --color-accent:    #06B6D4;
+  --color-accent-lt: #22D3EE;
+  --color-accent-bg: rgba(6,182,212,0.1);
+  --color-success:   #10B981;
+  --color-warning:   #F59E0B;
+  --color-danger:    #EF4444;
+  --font-base: 'Inter', sans-serif;
+  --radius-sm: 6px;
+  --radius:    10px;
+  --radius-lg: 14px;
+  --transition: 0.18s ease;
+}
+
+html, body, #root {
+  height: 100%;
+  font-family: var(--font-base);
+  background: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 4px; }
+
+a { color: inherit; text-decoration: none; }
+button { font-family: var(--font-base); cursor: pointer; }
+input, textarea, select { font-family: var(--font-base); }
