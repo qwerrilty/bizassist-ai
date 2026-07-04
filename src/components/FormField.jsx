@@ -29,9 +29,9 @@ export function Select({ children, ...props }) {
   )
 }
 
-export function GenerateButton({ loading, disabled, label, loadingLabel }) {
+export function GenerateButton({ loading, disabled, label, loadingLabel, onClick }) {
   return (
-    <button className={styles.generateBtn} disabled={loading || disabled}>
+    <button className={styles.generateBtn} disabled={loading || disabled} onClick={onClick}>
       {loading ? loadingLabel : label}
     </button>
   )
