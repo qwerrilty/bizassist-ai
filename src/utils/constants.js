@@ -28,6 +28,12 @@ export const NAV_SECTIONS = [
       { id: 'proposal', label: 'Proposal Generator' },
     ],
   },
+  {
+    label: 'Marketing',
+    items: [
+      { id: 'social', label: 'Social Media Generator' },
+    ],
+  },
 ]
 
 export const TRIAL_DAYS = 14
