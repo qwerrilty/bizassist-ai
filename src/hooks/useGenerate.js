@@ -14,25 +14,16 @@ export function useGenerate(toolId) {
     try {
       const { system, user } = buildPrompt(toolId, fields)
 
-      const res = await fetch('https://api.anthropic.com/v1/messages', {
+      const res = await fetch('/api/generate', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'x-api-key': import.meta.env.VITE_ANTHROPIC_API_KEY,
-          'anthropic-version': '2023-06-01',
-        },
-        body: JSON.stringify({
-          model: 'claude-sonnet-4-6',
-          max_tokens: 1024,
-          system: system || '',
-          messages: [{ role: 'user', content: user }],
-        }),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ system, user }),
       })
 
       if (!res.ok) throw new Error(`API error: ${res.status}`)
 
       const data = await res.json()
-      setOutput(data.content?.[0]?.text || '')
+      setOutput(data.result || '')
     } catch (err) {
       setError(err.message || 'Something went wrong. Please try again.')
     } finally {
