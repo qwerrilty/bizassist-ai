@@ -12,18 +12,20 @@ import PolicyGenerator from './pages/PolicyGenerator'
 import MeetingSummary from './pages/MeetingSummary'
 import ProposalGenerator from './pages/ProposalGenerator'
 import styles from './App.module.css'
+import SocialMediaGenerator from './pages/SocialMediaGenerator'
 
 const PAGE_META = {
-  dashboard:  { title: 'Dashboard',           sub: 'Welcome — what do you need today?' },
-  invoice:    { title: 'Invoice Chaser',       sub: 'Draft professional payment follow-up emails' },
-  quote:      { title: 'Quote Follow-Up',      sub: 'Turn pending quotes into confirmed jobs' },
-  bas:        { title: 'BAS Assistant',        sub: 'Understand your BAS before lodging' },
-  review:     { title: 'Review Responder',     sub: 'Reply to Google reviews professionally' },
-  complaint:  { title: 'Complaint Responder',  sub: 'Handle customer complaints with confidence' },
-  jobad:      { title: 'Job Ad Writer',        sub: 'Write Seek-ready job ads in seconds' },
-  policy:     { title: 'Policy Generator',     sub: 'Create clear staff policies instantly' },
-  meeting:    { title: 'Meeting Summary',      sub: 'Turn rough notes into structured minutes' },
-  proposal:   { title: 'Proposal Generator',   sub: 'Win more work with polished proposals' },
+  dashboard:  { title: 'Dashboard',                sub: 'Welcome — what do you need today?' },
+  invoice:    { title: 'Invoice Chaser',            sub: 'Draft professional payment follow-up emails' },
+  quote:      { title: 'Quote Follow-Up',           sub: 'Turn pending quotes into confirmed jobs' },
+  bas:        { title: 'BAS Assistant',             sub: 'Understand your BAS before lodging' },
+  review:     { title: 'Review Responder',          sub: 'Reply to Google reviews professionally' },
+  complaint:  { title: 'Complaint Responder',       sub: 'Handle customer complaints with confidence' },
+  jobad:      { title: 'Job Ad Writer',             sub: 'Write Seek-ready job ads in seconds' },
+  policy:     { title: 'Policy Generator',          sub: 'Create clear staff policies instantly' },
+  meeting:    { title: 'Meeting Summary',           sub: 'Turn rough notes into structured minutes' },
+  proposal:   { title: 'Proposal Generator',        sub: 'Win more work with polished proposals' },
+  social:     { title: 'Social Media Generator',    sub: 'Generate captions and open Canva templates' },
 }
 
 const PAGES = {
@@ -37,6 +39,7 @@ const PAGES = {
   policy:     PolicyGenerator,
   meeting:    MeetingSummary,
   proposal:   ProposalGenerator,
+  social:     SocialMediaGenerator,
 }
 
 export default function App() {
